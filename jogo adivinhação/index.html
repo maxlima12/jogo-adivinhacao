@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela de Boas-vindas -->
+    <div id="tela-boas-vindas" class="tela ativa">
+        <h1>Bem-vindo ao Jogo de Adivinhação!</h1>
+        <form id="form-nome">
+            <label for="input-nome">Digite seu nome:</label>
+            <input type="text" id="input-nome" required>
+            <button type="submit" id="btn-jogar">Jogar</button>
+        </form>
+    </div>
+
+    <!-- Tela de Jogo -->
+    <div id="tela-jogo" class="tela">
+        <h1>Oi, <span id="nome-jogador"></span>! Vamos Jogar!</h1>
+        <p>Adivinhe um número entre 1 e 100:</p>
+        <input type="text" id="input-palpite" pattern="[0-9]*" required>
+        <button id="btn-adivinhar">Adivinhar</button>
+        <p id="feedback"></p>
+    </div>
+
+    <!-- Tela de Resultado -->
+    <div id="tela-resultado" class="tela">
+        <h1>Parabéns, <span id="nome-vencedor"></span>!</h1>
+        <p>Você acertou o número <span id="numero-correto"></span> em <span id="tentativas"></span> tentativas!</p>
+        <button id="btn-jogar-novamente">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
