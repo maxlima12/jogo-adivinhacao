@@ -1,35 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #0c0000;
     margin: 0;
     padding: 0;
+    background-image: url(./imagem/imgg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tela {
     display: none;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    background-position: center;
 }
 
 .tela.ativa {
     display: block;
+    background-position: center;
 }
 
 input[type="text"] {
-    padding: 8px;
+    padding: 10px;
     margin: 10px;
     width: 200px;
+    background-position: center;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ff9100;
+    color: rgb(122, 64, 64);
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    background-position: center;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #81ff87;
+    background-position: center;
 }
